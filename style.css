@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 80%;
+    background-color: black;
+}
+
+:root
+{
+    --text-color:aquamarine;
+}
+
+.bg
+{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.bg img
+{
+    height: 30rem;
+    width: 30rem;
+}
+
+.bg img #snow
+{
+    height: 100vh;
+}
+
+.Mode
+{
+    font-size: 2.5rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    justify-content: right;
+    color: var(--text-color);
+}
+
+.Buttons
+{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    color:var(--text-color);
+
+}
+
+.Buttons a
+{
+    border: .2rem solid blue;
+    margin: .2rem;
+    padding: .3rem;
+}
