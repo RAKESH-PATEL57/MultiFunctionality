@@ -6,7 +6,7 @@
 html
 {
     font-size: 80%;
-    background-color: black;
+    background: #0c1f22;
 }
 
 :root
@@ -14,23 +14,16 @@ html
     --text-color:aquamarine;
 }
 
-.bg
-{
-    display: flex;
-    justify-content: center;
-    z-index: 0;
-}
-
-.bg img
-{
-    height: 30rem;
-    width: 30rem;
-}
-
-.bg img #snow
+/* section
 {
     height: 100vh;
-}
+    background: #0c1f22;
+    background: url(/assets/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter:blur(35px);
+} */
+
 
 .Mode
 {
@@ -49,7 +42,7 @@ html
     justify-content: center;
     margin-top: 20%;
     color:var(--text-color);
-
+    z-index: 1;
 }
 
 .Buttons a
@@ -57,4 +50,10 @@ html
     border: .2rem solid blue;
     margin: .2rem;
     padding: .3rem;
+}
+
+.cartoon img
+{
+    height: 20rem;
+    font-weight: 20rem;
 }
