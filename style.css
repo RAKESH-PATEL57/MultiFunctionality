@@ -49,12 +49,12 @@ section
     color:var(--btn-text1-color);
     justify-content: space-between;
     cursor: pointer;
+    transition: .3s;
 }
 
 .Buttons i
 {
     font-size: 2rem;
-    /* margin-right: 3rem; */
 }
 
 .Buttons button:hover
