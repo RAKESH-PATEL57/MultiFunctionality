@@ -23,6 +23,8 @@ html
 section
 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -49,7 +51,7 @@ section
     color:var(--btn-text1-color);
     justify-content: space-between;
     cursor: pointer;
-    transition: .3s;
+    transition: .4s;
 }
 
 .Buttons i
@@ -66,13 +68,25 @@ section
                 0 0 20px var(--btn-bg2-color);
 }
 
-.Buttons i:hover
+.Buttons i
 {
-   color: red;
+   text-shadow: 0 0 10px var(--btn-bg2-color),
+                0 0 20px var(--btn-bg2-color),
+                0 0 20px var(--btn-bg2-color);
 }
 
 .cartoon img
 {
     height: 20rem;
     font-weight: 20rem;
+}
+
+#age
+{
+    /* display: none; */
+    color: #fff;
+    height: 40rem;
+    width: 30rem;
+    border: .2rem solid var(--border-color);
+    margin-top: 10rem;
 }
