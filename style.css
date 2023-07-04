@@ -32,10 +32,12 @@ section
 {
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 2rem;
 }
 
-.Buttons button
+.Buttons .button
 {
     border: .1rem solid #fff;
     background: var(--btn-bg1-color);
@@ -52,6 +54,7 @@ section
     justify-content: space-between;
     cursor: pointer;
     transition: .4s;
+    margin-top: 2rem;
 }
 
 .Buttons i
@@ -59,7 +62,7 @@ section
     font-size: 2rem;
 }
 
-.Buttons button:hover
+.Buttons .button:hover
 {
     background: var(--btn-bg2-color);
     color:var(--btn-text2-color);
@@ -73,6 +76,12 @@ section
    text-shadow: 0 0 10px var(--btn-bg2-color),
                 0 0 20px var(--btn-bg2-color),
                 0 0 20px var(--btn-bg2-color);
+}
+
+.Buttons .input-box
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .cartoon img
