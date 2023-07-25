@@ -7,37 +7,38 @@
     
     <link rel="stylesheet" href="style.css">
 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-    <section>
-    
-        <!-- <div class="Mode">
-            <i class='bx bx-moon'></i>
-        </div> -->
+    <header>
+        <nav class="Buttons" id="btn">
+            <a href="#home" class="button"><i class='bx bxs-home'></i>Home<i class='bx bxs-home'></i></a>
+            <a href="#weather" class="button"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a>
+            <a href="#walculator" class="button"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a>
+            <a href="#wge" class="button"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a>
+            <a href="#walender" class="button"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a>
+        </nav>
+    </header>
 
-        <!-- <div class="search-box">   
-            <button class='bx bx-search' id="searchBtn"></button> 
-            <input type="text" placeholder="Enter your location" class="input-box">   
-        </div> -->
-        
-        <div class="Buttons" id="btn">
-             <a href="#Weather" class="button" id="Weather"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a>
-             <a href="#Restaurent" class="button" id="Weather"><i class='bx bx-cloud-lightning'></i>Restaurents<i class='bx bx-cloud-lightning'></i></a>
-             <a href="#calculator" class="button" id="Calculator"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a>
-             <a href="#age" class="button" id="Age"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a>
-             <a href="#Calender" class="button" id="Calender"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a>
-         </div>
+    <section id="home">
+        <div class="home-bg">
+
+            <model-viewer src="./models/besouro_azul.glb"  camera-controls shadow-intensity="1" disable-zoom autoplay auto-rotate></model-viewer>
+             
+        </div>
     </section>
+    
 
-</section id="Weather">
+<!-- </section id="Weather">
     <div id="age">
         <input type="date">
         <p>You're __ years__monts__days old.</p>
     </div>
-<section>
+<section> -->
 
    <script src="script.js"></script>
 </body>
