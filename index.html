@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiFunctionality</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
@@ -14,22 +14,26 @@
 
 <body>
 
-    <header>
-        <nav class="Buttons" id="btn">
-            <a href="#home" class="button"><i class='bx bxs-home'></i>Home<i class='bx bxs-home'></i></a>
-            <a href="#weather" class="button"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a>
-            <a href="#walculator" class="button"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a>
-            <a href="#wge" class="button"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a>
-            <a href="#walender" class="button"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a>
-        </nav>
-    </header>
+      <div class="home-content">
+          <div class="Buttons" id="btn">
+              <a href="#home" class="button"><i class='bx bxs-home'></i>Home<i class='bx bxs-home'></i></a>
+              <a href="#weather" class="button"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a>
+              <a href="#calculator" class="button"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a>
+              <a href="#age" class="button"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a>
+              <a href="#calender" class="button"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a>
+          </div>
+
+          <div class="home-bg">
+
+            <model-viewer src="./models/besouro_azul.glb"  camera-controls shadow-intensity="1" disable-zoom autoplay ></model-viewer>
+             
+           </div>
+
+      </div>
+    
 
     <section id="home">
-        <div class="home-bg">
-
-            <model-viewer src="./models/besouro_azul.glb"  camera-controls shadow-intensity="1" disable-zoom autoplay auto-rotate></model-viewer>
-             
-        </div>
+      
     </section>
     
 
