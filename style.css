@@ -19,6 +19,10 @@ html
     --btn-bg2-color:#00bbff;
     --bg-color:#000000;
 
+
+    --age-bg-color:linear-gradient(120deg,rgba(0, 225, 255, 0.2),rgba(6, 237, 245,.2));
+    --age-bg2-color:linear-gradient(120deg,rgba(0, 225, 255, 0.2),rgba(6, 237, 245,.2));
+
     --alpha-color:aqua;
 }
 
@@ -95,16 +99,34 @@ model-viewer
     /* transform: rotateZ(35deg);     */
 }
 
-.container
+.age-container
 {
-    width: 100%;
-    min-height: 100vh;
-    background: var(--bg-color);
+    height: 97vh;
+    background: var(--age-bg-color);
     color: #fff;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.age-container .age-content
+{ 
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    top: 8%;
+    /* margin-bottom: 5rem; */
+    /* background: var(--age-bg2-color); */
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 10px black;
+    padding: 20px;
 }
 
 .calculator
@@ -118,9 +140,8 @@ model-viewer
     text-align: center;
 }
 
-.input-box
+.age-input-box
 {
-    margin: 40px 0;
     padding: 35px;
     border-radius: 10px;
     display: flex;
@@ -128,9 +149,10 @@ model-viewer
     /* border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px var(--alpha-color),
                inset 0px 0px 10px var(--alpha-color); */
+    width: 60%;
 }
 
-.input-box input
+.age-input-box input
 {
     flex: 1;
     margin-right: 20px;
@@ -142,7 +164,7 @@ model-viewer
     position: relative;
 }
 
-.input-box button
+.age-input-box button
 {
     background:var(--bg-color);
     border: 0;
@@ -156,16 +178,14 @@ model-viewer
     font-size: 1.4rem;
 }
 
-.input-box button:hover
+.age-input-box button:hover
 {
     border: 2px solid var(--btn-text1-color);
-    /* background:var(--alpha-color); */
-    /* color: var(--btn-text2-color); */
     box-shadow: 0px 0px 10px var(--alpha-color),
     inset 0px 0px 10px var(--alpha-color);
 }
 
-.input-box input::-webkit-calendar-picker-indicator
+.age-input-box input::-webkit-calendar-picker-indicator
 {
     top: 0;
     left: 0;
@@ -186,7 +206,8 @@ model-viewer
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px var(--alpha-color),
     inset 0px 0px 10px var(--alpha-color);
-    padding: 1.1rem;           
+    padding: 2rem;   
+    width: max-content;
 }
 
 #result span
