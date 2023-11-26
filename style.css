@@ -34,21 +34,25 @@ body
 
 /*****************  Home section start  **************/
 
-.home-content
+header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    position: absolute;
+    border: 2px solid red;
+    /* min-height: 100vh; */
 }
 
-.home-content .Buttons
+header nav ul
 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Buttons .button
+header nav ul li
 {
     border: .1rem solid #fff;
     background: var(--btn-bg1-color);
@@ -64,7 +68,7 @@ body
     color:var(--btn-text1-color);
     cursor: pointer;
     transition: .3s;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .Buttons i
@@ -90,6 +94,7 @@ body
 .home-bg
 {
     margin-right: 10rem;
+    position: absolute;
 }
 
 model-viewer
@@ -102,7 +107,7 @@ model-viewer
 .age-container
 {
     height: 97vh;
-    background: var(--age-bg-color);
+    /* background: var(--age-bg-color); */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -123,10 +128,23 @@ model-viewer
     gap: 2rem;
     top: 8%;
     /* margin-bottom: 5rem; */
-    /* background: var(--age-bg2-color); */
+    
+    
     border-radius: 1rem;
-    box-shadow: inset 0px 0px 10px black;
-    padding: 20px;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px var(--alpha-color);
+}
+
+.age-container .age-content::before
+{
+    position: absolute;
+    content: '';
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(10px);
 }
 
 .calculator
