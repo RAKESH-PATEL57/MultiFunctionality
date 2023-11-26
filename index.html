@@ -14,22 +14,27 @@
 
 <body>
 
-      <div class="home-content">
-          <div class="Buttons" id="btn">
-              <a href="#home" class="button"><i class='bx bxs-home'></i>Home<i class='bx bxs-home'></i></a>
-              <a href="./agecalculator/ageCalculator.html" class="button"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a>
-              <a href="#weather" class="button"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a>
-              <a href="#calculator" class="button"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a>
-              <a href="#calender" class="button"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a>
-          </div>
+      <header>
+          <nav>
+              <ul>
+                <li><a href="#home" class="button"><i class='bx bxs-home'></i>Home<i class='bx bxs-home'></i></a></li>
+                <li><a href="./agecalculator/ageCalculator.html" class="button"><i class='bx bx-time-five'></i>Age Calculator<i class='bx bx-time-five'></i></a></li>
+                <li><a href="#weather" class="button"><i class='bx bx-cloud-lightning'></i>Weather<i class='bx bx-cloud-lightning'></i></a></li>
+                <li><a href="#calculator" class="button"><i class='bx bx-time-five'></i>Calculator<i class='bx bx-time-five'></i></a></li>
+                <li><a href="#calender" class="button"><i class='bx bx-calendar' ></i>Calender<i class='bx bx-calendar' ></i></a></li>
+              </ul>
+          </nav>
 
-          <div class="home-bg">
+        </header>
 
-            <!-- <model-viewer src="./models/robot_playground.glb"  camera-controls shadow-intensity="1" disable-zoom autoplay ></model-viewer> -->
+    <section class="home">
+        
+        <div class="home-bg">
+
+            <model-viewer src="./models/robot_playground.glb"  camera-controls shadow-intensity="1" disable-zoom autoplay ></model-viewer>
              
            </div>
-
-      </div>
+    </section>
     
 
     <section id="calculator">
@@ -37,13 +42,20 @@
     </section>
     
 
-<!-- </section id="ageCalculator">
-    <div id="age">
-        <input type="date" id="date">
-        <button id="calculate">calculate</button>
-        <p></p>
+</section id="ageCalculator">
+<div class="age-container">
+    <div class="age-content">
+        <h1>Age Calculator</h1>
+
+        <div class="age-input-box">
+            <input type="date" id="date">
+            <button id="calculate">Calculate</button>
+        </div>
+        <p id="result">Choose Your D.O.B And Press Calculate Button</p>
     </div>
-<section> -->
+</div>
+
+<section>
 
    <script src="script.js"></script>
 </body>
