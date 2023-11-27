@@ -1,8 +1,15 @@
 
-
 let userInput = document.getElementById("date");
 let calculate = document.querySelector('#calculate');
 let result = document.querySelector('#result');
+
+
+let date = document.querySelector('#date');
+
+date.onclick = () =>{
+   calculate.style.cursor = 'pointer';
+   calculate.style.pointerEvents = 'auto';
+}
 
 userInput.max = new Date().toISOString().split("T")[0];  //  present date tak khaali user ke choose karbaar ke debaa
 
@@ -52,12 +59,22 @@ calculate.onclick = () => {
         y3--;
     }
 
-    result.innerHTML = `You Are <span>${y3}</span> Year, <span>${m3}</span> months, and <span>${d3}</span> days old`
+    console.log(y3);
+    
+    if(y3 == "NaN" || m3 == "NaN" || d3 == "NaN")
+    {
+        result.innerHTML = `Please enter date`
+    }
+    else
+    {
+        result.innerHTML = `You Are <span>${y3}</span> Year, <span>${m3}</span> months, and <span>${d3}</span> days old`
+    }
 
 }
 
 function getDaysInMonth(year, month)
 {
+   
     return new Date(year, month, 0).getDate();   // it will return exact number of day like 30 din ra aaye ki 31 din ra aaye j
 }
 
