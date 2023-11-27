@@ -13,6 +13,9 @@ html
 
 :root
 {
+    --alpha-color:aqua;
+    --font-color:white;
+
     --border-color:#fff200;
     --btn-text1-color:#ffffff;
     --btn-text2-color:#000000;
@@ -24,7 +27,6 @@ html
     --age-bg-color:linear-gradient(120deg,rgba(0, 225, 255, 0.2),rgba(6, 237, 245,.2));
     --age-bg2-color:linear-gradient(120deg,rgba(0, 225, 255, 0.2),rgba(6, 237, 245,.2));
 
-    --alpha-color:aqua;
 }
 
 
@@ -51,6 +53,9 @@ header nav ul
 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: .5rem;
     /* border: 2px solid rgb(0, 13, 255); */
 }
 
@@ -120,7 +125,6 @@ ul li a
 
 .home-bg
 {
-    margin-right: 10rem;
     position: absolute;
 
     top: 30%;
@@ -130,59 +134,45 @@ model-viewer
 {
     height: 35rem;
     width: 35rem;
-    /* transform: rotateZ(35deg);     */
 }
 
 /*****************  Home section end  **************/
 
+/* ---------------------************----------------------- */
 
-.age-container
+
+/**************   ageCalculator section start    ***********************/
+.agecalculator
 {
-    height: 97vh;
-    /* background: var(--age-bg-color); */
-    color: #fff;
+    border: 2px solid red;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    /* border: 2px solid red; */
+    justify-content: right;
+    align-items: center;
+    color: var(--font-color);
+}
+
+.agecalculator .age-container
+{
+    border: 2px solid red;
+    width: 50%;
+    height: 80vh;
+    margin-right: 2rem;
     position: relative;
 }
 
 .age-container .age-content
 { 
     position: absolute;
-    /* border: 2px solid red; */
-    height: 80%;
-    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 2rem;
-    top: 8%;
-    /* margin-bottom: 5rem; */
-    
-    
+    /* top: 8%; */
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: inset 0px 0px 10px var(--alpha-color);
-}
-
-.age-container .age-content::before
-{
-    position: absolute;
-    content: '';
-    /* border: 2px solid red; */
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    filter: blur(10px);
-}
-
-.calculator
-{
-    width: 100%;
-    max-width: 600px;
 }
 
 .calculator h1
@@ -212,6 +202,11 @@ model-viewer
     font-size: 18px;
     border-radius: 5px;
     position: relative;
+}
+
+#calculate
+{
+    cursor: pointer;
 }
 
 .age-input-box button
@@ -264,3 +259,5 @@ model-viewer
 {
     color: var(--alpha-color);
 }
+
+/**************   ageCalculator section end    ***********************/
