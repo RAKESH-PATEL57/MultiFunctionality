@@ -92,13 +92,52 @@ var tl = gsap.timeline({scrollTrigger:{
     start:"0% 90%",
     end:"50% 50%",
     scrub:true,
-    // markers:true
+    markers:true
 }})
 
 tl.to(".home-bg",{
     top:"120%",
     left:"0%",
     right:"50%"
+})
+
+// second-bg animation
+
+var tl = gsap.timeline({scrollTrigger:{
+    trigger:".agecalculator",
+    start:"0% 90%",
+    end:"50% 50%",
+    scrub:true,
+    markers:true
+}})
+
+tl.from(".first-bg",{
+    scrollTrigger:{
+        trigger:".first-bg",
+        start:"110% 90%",
+        end:"0% 50%",
+        scrub:true,
+        // markers:true
+    }
+});
+
+tl.to(".first-bg",{
+    top:"100%",
+    left:"0%",
+    right:"50%",
+    scale:2,
+    opacity:0
+})
+
+tl.from(".second-bg",{
+    scale:0,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".second-bg",
+        scrub:true,
+        markers:true,
+        start:"top 150%"
+    }
 })
 
 
