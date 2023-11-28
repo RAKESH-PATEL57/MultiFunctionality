@@ -86,6 +86,20 @@ function getDaysInMonth(year, month)
 
 
 
+// gsap animation
+var tl = gsap.timeline({scrollTrigger:{
+    trigger:".agecalculator",
+    start:"0% 90%",
+    end:"50% 50%",
+    scrub:true,
+    // markers:true
+}})
+
+tl.to(".home-bg",{
+    top:"120%",
+    left:"0%",
+    right:"50%"
+})
 
 
 
