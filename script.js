@@ -79,36 +79,16 @@ function getDaysInMonth(year, month)
 }
 
 
-
-
-
-
-
-
-
 // gsap animation
-var tl = gsap.timeline({scrollTrigger:{
-    trigger:".agecalculator",
-    start:"0% 90%",
-    end:"50% 50%",
-    scrub:true,
-    markers:true
-}})
 
-tl.to(".home-bg",{
-    top:"120%",
-    left:"0%",
-    right:"50%"
-})
-
-// second-bg animation
+// first-bg animation
 
 var tl = gsap.timeline({scrollTrigger:{
     trigger:".agecalculator",
     start:"0% 90%",
     end:"50% 50%",
     scrub:true,
-    markers:true
+    // markers:true
 }})
 
 tl.from(".first-bg",{
@@ -129,13 +109,15 @@ tl.to(".first-bg",{
     opacity:0
 })
 
+// second-bg-animation
+
 tl.from(".second-bg",{
     scale:0,
     opacity:0,
     scrollTrigger:{
         trigger:".second-bg",
         scrub:true,
-        markers:true,
+        // markers:true,
         start:"top 150%"
     }
 })
