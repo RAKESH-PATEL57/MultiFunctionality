@@ -103,7 +103,7 @@ tl.from(".first-bg",{
 
 tl.to(".first-bg",{
     top:"100%",
-    left:"0%",
+    left:"2%",
     right:"50%",
     scale:2,
     opacity:0
