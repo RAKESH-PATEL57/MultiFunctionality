@@ -137,36 +137,41 @@ ul li a
 
 .first-bg
 {
-    height: fit-content;
+    height: 100%;
+    top: 0;
     position: absolute;
-    top: 10%;
-    z-index: -1;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.bg-content
+{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-content h1
+{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 1rem;
 }
 
 .first-bg model-viewer
 {
     height: 86vh;
     width:75vw;
-    z-index: -1;
-    /* border: 2px solid red; */
-    /* z-index: 0; */
+    z-index: 100;
     transform: scale(1.3);
-    /* animation: first-bg-animation 10s linear infinite; */
-    /* opacity: .5; */
     filter: hue-rotate(290deg) drop-shadow(0px 0px 20px aqua) contrast(100);
 }
 
-/* @keyframes first-bg-animation
-{
-    0%{
-        filter: hue-rotate(0deg) drop-shadow(0px 0px 10px aqua);
-    }
-    100%{
-        filter: hue-rotate(360deg) drop-shadow(0px 0px 10px aqua);
-    }
-} */
 
 /*****************  Home section end  **************/
 
@@ -176,7 +181,7 @@ ul li a
 /**************   ageCalculator section start    ***********************/
 .agecalculator
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     min-height: 100vh;
     display: flex;
     justify-content: right;
