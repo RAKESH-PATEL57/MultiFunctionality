@@ -14,7 +14,9 @@ date.onclick = () =>{
 userInput.max = new Date().toISOString().split("T")[0];  //  present date tak khaali user ke choose karbaar ke debaa
 
 calculate.onclick = () => {
-    let birthDate = new Date(userInput.value);
+
+    const userInputValue =  userInput.value;
+    let birthDate = new Date(userInputValue);
 
     let d1 = birthDate.getDate();
     let m1 = birthDate.getMonth() + 1;
@@ -61,9 +63,9 @@ calculate.onclick = () => {
 
     console.log(y3);
     
-    if(y3 == "NaN" || m3 == "NaN" || d3 == "NaN")
+    if(userInputValue == '')
     {
-        result.innerHTML = `Please enter date`
+        result.innerHTML = `Please enter your date of birth first`
     }
     else
     {
@@ -121,37 +123,3 @@ tl.from(".second-bg",{
         start:"top 150%"
     }
 })
-
-
-
-
-// var a;
-
-// let calculator = document.querySelector('calculate');
-
-// function ageCalculator()
-// {
-//     document.getElementById("age").style.display="block";
-//     document.getElementById("btn").style.display="flex";
-// }
-
-// const dateInput = document.querySelector("#date");
-
-
-// const pElement = document.querySelector("p");
-
-// dateInput.addEventListener("change", () => {
-//     const birthDate = new Date(dateInput.value);
-    
-//     const currentDate = new Date();
-//     const newDate = new Date(currentDate - birthDate);
-
-//     const years = newDate.getFullYear() - 1970;
-//     const months = newDate.getMonth();
-//     const days = newDate.getDate() -1;
-
-//     pElement.innerText = `You're ${years} years ${months} monts ${days} days old.`;
-// });
-
-
-
